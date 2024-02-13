@@ -66,3 +66,14 @@ aside {
 body {
   background-color: whitesmoke;
 }
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+article p:first-child {
+  color: cadetblue;
+}
