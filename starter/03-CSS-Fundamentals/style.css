@@ -69,15 +69,17 @@ body {
 
 li:first-child {
   font-weight: bold;
+  font-style: italic;
 }
 
 li:last-child {
   font-style: italic;
 }
 /* Misconception
+
 article p:first-child {
   color: cadetblue;
-} */
+}*/
 
 a:link {
   color: red;
