@@ -1,0 +1,39 @@
+body {
+  border: 5px solid #444;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.heading {
+  font-size: large;
+  text-transform: uppercase;
+}
+h2 {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+a {
+  color: #444;
+}
+a:link:hover {
+  text-decoration: none;
+}
+li {
+  list-style: square;
+}
+button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+#shipping-text {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  color: #777;
+}
