@@ -1,3 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: whitesmoke;
+}
 h1,
 h2,
 h3,
@@ -6,10 +13,22 @@ li {
   font-family: Poppins;
   color: #444;
 }
+body {
+  font-family: Poppins;
+  border-top: 10px solid #1098ad;
+}
 h1,
 h2,
 h3 {
   color: #1098ad;
+}
+.main-header {
+  background-color: rgb(232, 232, 232);
+  padding: 20px 40px;
+  margin-bottom: 25px;
+}
+.post-header {
+  margin-bottom: 40px;
 }
 h1 {
   font-size: 26px;
@@ -22,14 +41,22 @@ h2 {
 p {
   font-size: 22px;
   line-height: 1 0.5;
+  margin-bottom: 15px;
 }
 h3 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+li:last-child {
+  margin-bottom: 0px;
 }
 footer p {
   font-size: 16px;
@@ -53,7 +80,6 @@ article p {
   list-style: none;
   color: #f4b33f;
 }
-
 .main-headr {
   background-color: #f7f7f73f;
 }
@@ -63,10 +89,10 @@ aside {
   border-bottom: 5px solid #1098ad;
   border-top: 5px solid #1098ad;
 }
-body {
-  background-color: whitesmoke;
+.aside-header {
+  text-align: center;
+  padding: 20px 0px;
 }
-
 li:first-child {
   font-weight: bold;
   font-style: italic;
@@ -80,11 +106,6 @@ li:last-child {
 article p:first-child {
   color: cadetblue;
 }*/
-
-a:link {
-  color: red;
-}
-a:visited {
-  color: blue;
-  text-decoration: slategray;
+article {
+  margin-bottom: 60px;
 }
