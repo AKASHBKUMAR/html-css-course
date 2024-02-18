@@ -68,9 +68,14 @@ footer p {
   font-size: 16px;
 }
 article p {
-  font-style: italic;
+  /* font-style: italic; */
 }
 #author {
+  font-size: 18px;
+  /* Changed the Block Level Element to Inline Element */
+  /* display: inline; */
+}
+#author strong {
   font-style: italic;
   font-size: 18px;
 }
@@ -101,7 +106,6 @@ article p {
 }
 li:first-child {
   font-weight: bold;
-  font-style: italic;
 }
 
 li:last-child {
@@ -112,6 +116,10 @@ li:last-child {
 article p:first-child {
   color: cadetblue;
 }*/
-article {
-  /* margin-bottom: 60px; */
+nav a:link {
+  /* Changed Inline Element to Block Level Element */
+  /* background-color: orangered;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px; */
 }
