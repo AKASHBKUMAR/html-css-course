@@ -66,12 +66,14 @@ h2 {
   /* background-color: orange; */
   position: relative;
 }
+/* paragraph */
 p {
   font-size: 22px;
   line-height: 1 0.5;
   margin-bottom: 15px;
+  text-align: justify;
 }
-
+/* h3 Elements */
 h3 {
   font-size: 30px;
   text-transform: uppercase;
@@ -140,12 +142,21 @@ li:last-child {
 article p:first-child {
   color: cadetblue;
 }*/
+nav,
+h1 {
+  text-align: center;
+}
 nav a:link {
   /* Changed Inline Element to Block Level Element */
-  /* background-color: orangered;
-  display: block;
-  margin-bottom: 10px;
-  margin-top: 10px; */
+  /* background-color: orangered; */
+  display: inline-block;
+  margin: 10px 25px;
+  text-decoration: none;
+  color: #444;
+}
+a:visited {
+  text-decoration: none;
+  color: #444;
 }
 
 .like-button {
