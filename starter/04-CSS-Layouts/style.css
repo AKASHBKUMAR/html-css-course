@@ -30,7 +30,6 @@ h3 {
 .main-header {
   background-color: rgb(232, 232, 232);
   padding: 20px 40px;
-  margin-bottom: 25px;
 }
 /* Post-Header */
 .post-header {
@@ -145,21 +144,21 @@ article p:first-child {
 }*/
 nav,
 h1 {
-  text-align: center;
+  /* text-align: center; */
 }
-nav a:link {
+.link:link {
   /* Changed Inline Element to Block Level Element */
   /* background-color: orangered; */
   display: inline-block;
-  margin: 10px 10px;
+  text-decoration: none;
+  margin: 10px 25px;
   color: #444;
 }
-.link:hover {
+.link :hover {
   font-weight: 900;
   color: #f4b33f;
 }
-nav a:link :hover,
-nav a:link:active {
+.link:link :active {
   color: gold;
 }
 a:link :visited {
