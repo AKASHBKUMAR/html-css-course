@@ -26,12 +26,13 @@ h2,
 h3 {
   color: #1098ad;
 }
-
+/* Main Header */
 .main-header {
   background-color: rgb(232, 232, 232);
   padding: 20px 40px;
   margin-bottom: 25px;
 }
+/* Post-Header */
 .post-header {
   margin-bottom: 40px;
   width: 800px;
@@ -150,11 +151,18 @@ nav a:link {
   /* Changed Inline Element to Block Level Element */
   /* background-color: orangered; */
   display: inline-block;
-  margin: 10px 25px;
-  text-decoration: none;
+  margin: 10px 10px;
   color: #444;
 }
-a:visited {
+.link:hover {
+  font-weight: 900;
+  color: #f4b33f;
+}
+nav a:link :hover,
+nav a:link:active {
+  color: gold;
+}
+a:link :visited {
   text-decoration: none;
   color: #444;
 }
@@ -170,4 +178,22 @@ a:visited {
 
 h3 + p::first-line {
   color: #f4b33f;
+}
+/* Using the Float Layout Model */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  /* padding-left: 80px; */
+  margin-top: 10px;
+  float: left;
+  margin-left: 20px;
+}
+/* Floating the Main Header */
+h1 {
+  float: left;
+}
+nav {
+  float: right;
 }
