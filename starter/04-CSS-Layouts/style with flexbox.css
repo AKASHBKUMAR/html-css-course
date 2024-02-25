@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: whitesmoke;
@@ -9,7 +10,7 @@ body {
   position: relative;
 }
 .container {
-  width: 700px;
+  width: 1200px;
   margin: 0px auto;
   /* position: relative; */
 }
@@ -97,6 +98,7 @@ footer p {
 } */
 #author {
   font-size: 18px;
+  margin-bottom: 0px;
   /* Changed the Block Level Element to Inline Element */
   /* display: inline; */
 }
@@ -125,9 +127,10 @@ footer p {
   position: relative;
 }
 .sidebar {
-  width: 500px;
+  /* width: 500px; */
   border-top: 5px solid salmon;
   border-bottom: 5px solid salmon;
+  /* height: fit-content; */
   background-color: #c7c4c4;
 }
 li:first-child {
@@ -146,17 +149,21 @@ nav,
 h1 {
   text-align: center;
 }
-nav a:link {
+.link:link {
   /* Changed Inline Element to Block Level Element */
   /* background-color: orangered; */
   display: inline-block;
-  margin: 10px 25px;
+  margin: 0px 25px;
   text-decoration: none;
   color: #444;
 }
-a:visited {
+.link:visited {
   text-decoration: none;
   color: #444;
+}
+.link:hover {
+  color: #f4b33f;
+  font-weight: 900;
 }
 
 .like-button {
@@ -168,6 +175,61 @@ a:visited {
   right: 50px;
 }
 
-h3 + p::first-line {
+/* h3 + p::first-line {
   color: #f4b33f;
+} */
+/* FLEX BOX PART */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.related-link:link {
+  text-decoration: none;
+  color: #1098ad;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.related-link:visited {
+  color: #1098ad;
+}
+.related-author {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px;
+  font-style: italic;
+}
+.unordered-list {
+  margin-bottom: 25px;
+}
+.row {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+.code-image {
+  width: 100%;
+  height: auto;
+}
+aside {
+  flex: 1;
+}
+article {
+  flex: 0 0 825px;
 }
