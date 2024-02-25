@@ -9,37 +9,63 @@
       .el--1 {
         background-color: blueviolet;
       }
+
       .el--2 {
         background-color: orangered;
       }
+
       .el--3 {
         background-color: green;
         height: 150px;
       }
+
       .el--4 {
         background-color: goldenrod;
+        order: -1;
+        /* flex-shrink: 0; */
       }
+
       .el--5 {
         background-color: palevioletred;
+        order: -2;
+        /* flex-grow: 2; */
       }
+
       .el--6 {
         background-color: steelblue;
+        /* align-self: flex-end; */
       }
+
       .el--7 {
         background-color: yellow;
+        order: 1;
       }
+
       .el--8 {
         background-color: crimson;
+        align-self: stretch;
       }
 
       .container {
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center; /* cross axis*/
+        justify-content: flex-start;
+        /* gap: 30px; */
+
+        /* main-axis*/
+      }
+      .el {
+        /*   */
+        flex: 1 1 10px;
+        gap: 10px;
+        /* flex-shrink: 0; */
       }
     </style>
   </head>
@@ -50,9 +76,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div>
       <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
