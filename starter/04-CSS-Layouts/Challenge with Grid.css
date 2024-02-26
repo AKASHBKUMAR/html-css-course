@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.product {
+  width: 825px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border: 5px solid #444;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  position: relative;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.heading {
+  font-size: large;
+  text-transform: uppercase;
+  padding: 10px;
+}
+h2 {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+a {
+  color: #444;
+  margin-bottom: 20px;
+}
+a:link:hover {
+  text-decoration: none;
+}
+.list-items {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.product-details-section {
+  margin-top: 10px;
+}
+.product-details-section:first-child {
+  margin-bottom: 10px;
+}
+.add-to-cart {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  padding: 15px;
+}
+.add-to-cart:hover {
+  background-color: white;
+  color: black;
+  border-top: 4px solid black;
+}
+#shipping-text {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
+/* sale paragragh*/
+.sale {
+  letter-spacing: 2px;
+  background-color: orangered;
+  padding: 7px 15px 7px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline;
+  position: absolute;
+  left: -34px;
+  top: -10px;
+}
+.color {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 30px;
+}
+.black-color {
+  background-color: #444;
+}
+.blue-color {
+  background-color: #2f6ee2;
+}
+.orangered-color {
+  background-color: #ec2f2f;
+}
+.yellow-color {
+  background-color: #f0bf1e;
+}
+.green-color {
+  background-color: #90cc20;
+}
+.brown-color {
+  background-color: #885214;
+}
+/* Grid Container */
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+  align-items: center;
+}
+.heading {
+  grid-column: 1/-1;
+}
+.price-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#shipping-text {
+  margin: 0px;
+}
+.add-to-cart {
+  grid-column: 1/-1;
+}
+/* .details-description {
+  margin-top: 15px;
+} */
