@@ -65,9 +65,15 @@ section {
   cursor: pointer;
   border: none;
 }
+.button:hover {
+  background-color: #b197fc;
+}
 button:last-child {
   background-color: #d6336c;
   margin-left: auto;
+}
+button:last-child:hover {
+  background-color: #f06595;
 }
 .email {
   background-color: #868e96;
