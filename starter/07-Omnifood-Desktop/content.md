@@ -126,3 +126,18 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+#####
+
+## Sections
+
+- Navigation
+- Hero
+- Featured in (Small section with logos)
+- How it Works (Provides useful information and all details about it)
+- Meals (and list of Diets)
+- Gallery + Testimonials (Trying to sell the product)
+- Contact-information
+- Pricing + Features ()
+- Call to Action (Sign them Up)
+- Footer
