@@ -19,6 +19,8 @@
 - Shadows:  
 
 - Border-Radius: 
+  start-eating-well-button: 1rem
+  main-navigation-links: 1rem
 
 - Whitespace: 
   --- Spacing System (px)
@@ -26,7 +28,7 @@
 
 
 */
-
+/* ELEMENT SELECTOR */
 * {
   padding: 0px;
   margin: 0px;
@@ -43,27 +45,80 @@ body {
   font-weight: 400;
   color: #343a40;
 }
+span {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/* REUSABLE SELECTORS */
+.center-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.6rem;
+}
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-align {
+  align-items: center;
+}
+
+/* ****************************** */
+/* GENERAL COMPONENT */
+/* ****************************** */
+/* HEADER_SECTION */
+
+/* HERO SECTION */
 .section-hero {
   background-color: #fae5d3;
-  padding: 4.8rem 0;
-  padding-bottom: 6.4rem;
+  padding: 4.8rem 0 8rem 0;
 }
 .hero {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 3.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   column-gap: 3.2rem;
 }
+.hero-heading,
+.heading-secondary .heading-tertiary {
+  color: #495057;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  font-weight: 600;
+}
 .hero-heading {
   font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #495057;
+  /* color: #495057; */
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.sub-heading {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 1.6rem;
+}
+
 .hero-description {
   font-size: 2.4rem;
   line-height: 1.6;
@@ -112,7 +167,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  margin-top: 8rem;
+  margin-top: 6.4rem;
 }
 .delivered-images {
   display: flex;
@@ -127,10 +182,105 @@ body {
   margin: 0;
 }
 .delivered-text {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 600;
 }
-span {
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fae5d3;
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.omnifood-logo {
+  height: 2.2rem;
+}
+.main-navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.main-navigation-link:link,
+.main-navigation-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #343a40;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.main-navigation-link:hover,
+.main-navigation-link:active {
   color: #cf711f;
-  font-weight: 700;
+}
+.main-navigation-link.nav-cta:link,
+.main-navigation-link.nav-cta:visited {
+  background-color: #e67e22;
+  color: #fff;
+  transition: all 0.3s;
+}
+.main-navigation-link:hover.nav-cta:hover {
+  background-color: #cf711f;
+  color: #fff;
+}
+/* ********************************* */
+/* HOW IT WORKS SECTION */
+/* ********************************* */
+.section-how-it-works {
+  padding: 9.6rem 0;
+}
+
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #dee2e6;
+  margin-bottom: 2.2rem;
+}
+.heading-tertiary {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step-image-box::after,
+.step-image-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-image-box::before {
+  width: 60%;
+  z-index: -2;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+.step-image-box::after {
+  width: 45%;
+  background-color: #fae5d3;
+  padding-bottom: 45%;
+  z-index: -1;
+}
+.step-image {
+  width: 35%;
+  /* z-index: 1; */
 }
