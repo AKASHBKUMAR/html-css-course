@@ -62,12 +62,18 @@ body {
   row-gap: 9.6rem;
   column-gap: 6.4rem;
 }
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 .grid-3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid-align {
   align-items: center;
@@ -76,7 +82,7 @@ body {
   margin-right: 1.6rem;
 }
 .margin-right-med {
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem !important;
 }
 .center-text {
   text-align: center;
@@ -498,4 +504,97 @@ strong {
 }
 .gallery-item {
   overflow: hidden;
+}
+/* *********************************************** */
+/* TESTIMONIAL SECTION */
+/* *********************************************** */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.pricing-plan {
+  border-radius: 1.2rem;
+  width: 75%;
+}
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan-complete::after {
+  content: "BEST VALUE";
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  color: #343a40;
+  position: absolute;
+  padding: 0.8rem 8rem;
+  top: 6%;
+  right: -18%;
+  transform: rotate(45deg);
+}
+.price-plan-end {
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #495057;
+}
+.plan-sign-up {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+.price-plan-end {
+  justify-self: end;
+}
+.feature-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #343a40;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+.feature-description {
+  font-size: 1.6rem;
+  color: #495057;
+  line-height: 1.8;
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
 }
